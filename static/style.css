@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&family=Roboto&display=swap');
+
+@media screen and (width: 800px) {
+    body {
+        width: 60vw;
+    }
+}
+
+#top-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -10px -10px 10px -10px;
+    height: 7vh;
+    background-color: darkred;
+}
+
+#title {
+    color: whitesmoke;
+    font-family: 'Oleo Script Swash Caps', cursive;
+}
+
+#content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.choice {
+    width: 40vw;
+    height: 20vh;
+    margin: 10px;
+}
+
+img {
+    width: 40vw;
+    height: 20vh;
+}
+
+
+#bottom-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    font-family: 'Roboto', sans-serif;
+}
+
+fieldset {
+    width: 60vw;
+    height: 5vh;
+}
+
+input {
+    height: 3vh;
+}
+
+button {
+    width: 250px;
+    height: 30px;
+    margin-top: 20px;
+    background-color: darkred;
+    color: whitesmoke;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 5px 5px 5px black;
+    font-family: 'Roboto', sans-serif;
+    font-size: x-large;
+}
+
+
+

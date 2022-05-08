@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>56 Copperhill</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div id="top-bar">
+    <div id="title">
+        <span>56 Copperhill</span>
+    </div>
+</div>
+<form action="/form" method="POST">
+    <div id="content">
+        <div class="choice">
+            <label for="meat"><img src="{{ url_for('static', filename='ba.png') }}" alt="Meat"></label>
+            <input type="radio" value="Meat" id="meat" name="choice">
+        </div>
+        <div class="choice">
+            <label for="chicken"><img src="{{ url_for('static', filename='bb.png') }}" alt="Chicken"></label>
+            <input type="radio" value="Chicken" id="chicken" name="choice">
+        </div>
+        <div class="choice">
+            <label for="fish"><img src="{{ url_for('static', filename='bc.png') }}" alt="Fish"></label>
+            <input type="radio" value="Fish" id="fish" name="choice">
+        </div>
+        <div class="choice">
+            <label for="child"><img src="{{ url_for('static', filename='bd.png') }}" alt="Child"></label>
+            <input type="radio" value="Child" id="child" name="choice">
+        </div>
+    </div>
+    <div id="bottom-content">
+        <fieldset id="name-field">
+            <label for="name">Name :</label>
+            <input id="name" type="text" name="name">
+        </fieldset>
+        <fieldset>
+            <label for="comments">Comments :</label>
+            <input id="comments" type="text" name="comments">
+        </fieldset>
+        <button type="submit">Order</button>
+    </div>
+</form>
+</body>
+</html>
