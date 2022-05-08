@@ -19,8 +19,8 @@ def form():
     message = f'{choice} / {name} / {comments}'
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.starttls()
-    server.login('56copperhill@gmail.com', 'azertyytreza')
-    server.sendmail('56copperhill@gmail.com', 'kvnselen@icloud.com', message)
+    server.login('56copperhill@gmail.com', '')
+    server.sendmail('56copperhill@gmail.com', '', message)
 
     title = 'Order sent'
 
